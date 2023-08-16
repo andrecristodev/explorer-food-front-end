@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 import { Container, Content, Dishes, Options, Favorite } from './styles'
 
-import { Header } from '../../components/Header'
+import { Header } from '../../components/header'
 import { Section } from '../../components/Section'
-import { Footer } from './../../components/Footer'
+import { Footer } from './../../components/footer'
 
 import { api } from '../../services/api'
 

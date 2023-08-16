@@ -6,8 +6,8 @@ import { api } from '../../services/api'
 
 import { Container, Content, Dish, Form } from './styles'
 
-import { Header } from '../../components/Header'
-import { Footer } from '../../components/Footer'
+import { Header } from '../../components/header'
+import { Footer } from '../../components/footer'
 import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { NewIngredients } from '../../components/NewIngredients'

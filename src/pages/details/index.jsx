@@ -7,8 +7,8 @@ import { useAuth } from '../../hooks/auth'
 
 import { Container, Content, Dish, Action } from './styles'
 
-import { Header } from './../../components/Header'
-import { Footer } from './../../components/Footer'
+import { Header } from './../../components/header'
+import { Footer } from './../../components/footer'
 import { ButtonText } from './../../components/ButtonText'
 import { Ingredients } from './../../components/Ingredients'
 import { Button } from '../../components/Button'
