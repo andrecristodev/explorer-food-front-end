@@ -73,7 +73,7 @@ export function SignUp() {
                         <Input
                             id='name'
                             type='text'
-                            placeholder='Exemplo: Tulio Gomides'
+                            placeholder='Exemplo: Andre Braga'
                             onChange={e => setName(e.target.value)}
                         />
                     </div>

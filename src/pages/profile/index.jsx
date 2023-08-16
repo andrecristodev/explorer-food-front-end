@@ -97,7 +97,7 @@ export function Profile() {
                             id='name'
                             type='text'
                             icon={RiUser3Line}
-                            placeholder='Exemplo: Tulio Gomides'
+                            placeholder='Exemplo: Andre Braga'
                             value={name}
                             onChange={e => setName(e.target.value)}
                             onKeyDown={handleKeyDown}
