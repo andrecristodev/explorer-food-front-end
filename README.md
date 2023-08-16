@@ -1,60 +1,99 @@
-<p align="center">
-  <h1 align="center"><a href="">🍴 Food V2 Explorer 🍴</a></h1>
-</p>
+# Food Explorer
 
-## 📝 Sobre
+![Logo](https://raw.githubusercontent.com/GomidesTs/food-explorer-back-end/17c651de31265dcc961c11b01d309fbd9bfa14b8/.github/logo.svg)
 
-O Food Explorer é uma plataforma digital abrangente voltada para restaurantes, que oferece aos usuários uma experiência completa de pedido e acompanhamento de suas refeições. Com funcionalidades de cadastro de usuário, realização de pedidos e monitoramento de status, os clientes podem de maneira simples e eficiente realizar suas escolhas e acompanhar todo o processo. Personalização de perfis, filtragem de favoritos e sistema de busca contribuem para uma experiência mais conveniente e personalizada.
+## Sobre
 
-A funcionalidade principal do carrinho de compras permite aos usuários selecionar os itens de seu interesse e escolher entre duas opções de pagamento: cartão de crédito ou Pix. Essa flexibilidade torna a realização dos pagamentos mais conveniente, de acordo com as preferências individuais.
+O Food Explorer é uma aplicação web desenvolvida com tecnologias como React.js no front-end e Node.js no [back-end](https://github.com/GomidesTs/food-explorer-back-end) que proporciona uma experiência completa de navegação e compra de alimentos para clientes de um restaurante. Com funcionalidades como customização de perfil, filtragem de favoritos e carrinho 100% funcional com opções de pagamento em cartão ou Pix, o projeto oferece segurança e praticidade aos usuários.
 
-A figura do Administrador desempenha um papel crucial na plataforma, uma vez que detém o controle sobre o menu do restaurante, podendo adicionar, editar e remover pratos conforme necessário. Além disso, o administrador possui a capacidade de alterar o status dos pedidos, refletindo os diferentes estágios de preparação na cozinha; estas atualizações são prontamente visíveis para os clientes.
+Além disso, o administrador tem acesso para criar, editar e remover pratos, além de poder alterar o status dos pedidos, que são imediatamente atualizados na tela dos consumidores. O destaque é a responsividade do projeto, que se adapta a diversos tipos de dispositivos, incluindo desktops, tablets e smartphones.
 
-O projeto também incorpora recursos adicionais, como a alternância de temas da página, permitindo que os usuários personalizem a aparência da plataforma de acordo com suas preferências visuais. Além disso, a personalização do perfil do usuário, incluindo foto, nome e senha, contribui para uma experiência mais individualizada.
+Os usuários precisam se cadastrar para utilizar os serviços disponibilizados na plataforma, que conta ainda com recursos adicionais, como customização do perfil do usuário (avatar, nome e senha) e diversos efeitos visuais que tornam a navegação mais agradável e intuitiva.
 
-Diversos elementos visuais foram implementados no projeto, visando tornar a plataforma mais atraente e envolvente para os usuários.
+Em resumo, o Food Explorer é uma plataforma completa e eficiente para navegar e realizar compras de alimentos de forma segura, prática e intuitiva, que proporciona uma experiência agradável e personalizada aos seus usuários.
 
-Por fim, a adaptabilidade do Food Explorer para diferentes dispositivos é uma característica fundamental, permitindo o acesso e uso conveniente tanto em smartphones quanto em tablets e computadores.
+## Tecnologias
 
-Em resumo, o Food Explorer é uma plataforma digital abrangente, com design bem elaborado, que proporciona aos usuários uma experiência completa de pedido, acompanhamento e personalização.</p>
-</br>
+As seguintes tecnologias foram empregadas na no desenvolvimento do front-end:
 
-___
+- axios
+- react
+- react-dom
+- react-icons
+- react-router-dom
+- styled-components
+- swiper
+- vite
 
-## ✅ Instruções de Uso
+## Como utilizar
 
-Clone o projeto para sua máquina.
+Clone o projeto para o local desejado em seu computador.
 
 ```bash
-$ git clone git@github.com:seuusuário/explorer-food-front-end.git
+git clone https://github.com/GomidesTs/food-explorer-front-end.git
 ```
-___ 
 
-#### 💻 Executando o Front-end
+Execute o front-end
+
 ```bash
-# Navegue até o diretório do FrontEnd
-$ cd food-explorer-frontend
+# Na raiz do projeto renomeie o arquivo .env.example para .env e insira a vite url
+VITE_URL =
+
+# Navegue até o diretório do front-end
+cd food-explorer-frontend
 
 # Instale as dependências necessárias
-$ npm install
+npm install
 
-# Inicie o servidor de Front-end com o seguinte comando
-$ npm run dev
+# Agora inicie o servidor do frontEnd
+npm run dev
 
-# O terminal exibirá o endereço local da aplicação. 
-Digite esse endereço em seu navegador para acessar a plataforma. 
-O endereço utilizado neste exemplo é:
+# O terminal irá exibir o endereço local onde a aplicação está sendo executada. Basta digitar o mesmo endereço em seu navegador preferido. O endereço usado na criação do projeto foi este:
 
-  http://localhost:5173/
+# http://localhost:5173/
 ```
 
-🔑 Para testes de administração, utilize as seguintes credenciais: </br>
+## Veja o resultado final
 
-E-mail: admin@exemplo.com </br>
-Senha: 123456
+Você observará a união desse repositório com o [back-end](https://github.com/GomidesTs/food-explorer-back-end), crie uma conta e desfrute da aplicação.
 
-___
-O Front-end está hospedado no Vercel.
-Certifique-se de que o servidor de backend esteja operacional.
+### Quer ver como a aplicação funciona vista pelo administrador? Use a conta a seguir
 
-⚠ OBS: Vale ressaltar que, devido à natureza do serviço gratuito de hospedagem, o servidor backend pode entrar em estado de hibernação após 15 minutos de inatividade, o que pode resultar em atrasos de até 1 minuto para a resposta, dependendo da carga nos servidores do serviço de hospedagem.</p>
+  `e-mail: admin@foodexplorer.com`  `senha: rocketseat`
+
+O servidor deste projeto foi hospedado no [Render](https://render.com/), um serviço de hospedagem gratuito. É importante ressaltar que, por estar hospedado em um serviço gratuito, o back-end entra em estado de hibernação após 15 minutos sem utilização. Caso o usuário tente acessar o site e o back-end não responda, é necessário aguardar um pouco, pois ele estará "inicializando" os serviços novamente. Essa etapa pode levar até 1 minuto, dependendo da carga nos servidores do Render. É importante destacar que esse tempo de inicialização pode afetar o desempenho da aplicação, especialmente em períodos de alta demanda.
+
+Por outro lado, o front-end foi hospedado na plataforma [Netlify](https://www.netlify.com/), que permite hospedar sites e aplicativos web de forma gratuita. Para que o front-end funcione corretamente, é fundamental que o servidor de back-end esteja em funcionamento e respondendo corretamente. Caso contrário, o front-end pode apresentar erros ou comportamentos inesperados.
+
+[O resultado FINAL pode ser visto aqui](https://delicate-belekoy-60cb5c.netlify.app/)
+
+## Capturas de tela
+
+A interface da aplicação terá mudanças de layout dependendo do usuário logado e de suas restrições, o que afetará a exibição de mecânicas e ícones na tela. Abaixo estão apresentados gifs e capturas de tela que demonstram os diferentes estados separados por usuários padrão e administradores. Essas alterações no layout visam oferecer uma experiência mais personalizada e adequada às necessidades de cada tipo de usuário. Além disso, é importante ressaltar que essas mudanças estão diretamente relacionadas às permissões de acesso definidas para cada tipo de usuário, garantindo assim maior segurança e privacidade no uso da aplicação.
+
+### Usuário padrão
+
+- Página home
+![Home](https://github.com/GomidesTs/-food-explorer-front-end/blob/main/.github/home%20user.png?raw=true)
+
+- Página favoritos
+![Favorites](https://github.com/GomidesTs/-food-explorer-front-end/blob/main/.github/favoritos.png?raw=true)
+
+- Aplicação segundo usuário padrão
+![User](https://github.com/GomidesTs/-food-explorer-front-end/blob/main/.github/gifUser.gif?raw=true)
+
+### Usuário administrador
+
+- Página home
+![Home](https://github.com/GomidesTs/-food-explorer-front-end/blob/main/.github/homeAdin.png?raw=true)
+
+- Aplicação segundo usuário administrador
+![Admin](https://github.com/GomidesTs/-food-explorer-front-end/blob/main/.github/gitAdmin.gif?raw=true)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Authors
+
+- [@GomidesTs](https://github.com/GomidesTs)

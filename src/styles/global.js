@@ -1,73 +1,62 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
-    :root {
-        font-size: 62.5%;
-    }
+:root {
+    font-size: 62.5%;
+    
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+}
 
-    body {
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-        color: ${({ theme }) => theme.COLORS.WHITE};
+body {
+    background-color: ${({ theme }) => theme.COLORS.DARK_1000};
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
-        -webkit-font-smoothing: antialiased;
+}
 
-        *::-webkit-scrollbar {
-            width: 22px;
-            height: 22px;
-            border-radius: 9999px;
-        }
+body, input, textarea {
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    outline: none;
+}
 
-        *::-webkit-scrollbar-corner {
-            background-color: transparent;
-        }
+a {
+    text-decoration: none;
+}
 
-        *::-webkit-scrollbar-thumb {
-            width: 6px;
-            background-color: transparent;
-            border-radius: 80px;
-            box-shadow: inset 0 0 0px 6px ${({ theme }) => theme.COLORS.BLUE};
-            border: solid 10px transparent;
-        }
+button, a {
+    cursor: pointer;
 
-        /* Chrome, Safari, Edge, Opera */
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-        }
+    transition: filter 0.2s;
 
-        /* Firefox */
-        input[type=number] {
-        -moz-appearance: textfield;
-        }   
-    }
-
-    body, input, textarea {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        outline: none;
-    }
-
-    button {
-        font-family: 'Poppins', sans-serif;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    button, a {
-        cursor: pointer;
-        transition: filter 0.2s;
-    }
-
-    button:hover, a:hover {
+    &:hover {
         filter: brightness(0.9);
     }
-`;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar-track{
+    background: ${({ theme }) => theme.COLORS.DARK_1000};
+}
+
+::-webkit-scrollbar{
+    width: 0.6rem;
+
+    background: ${({ theme }) => theme.COLORS.DARK_1000};
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+
+    background: ${({ theme }) => theme.COLORS.CAKE_200};
+}
+`
