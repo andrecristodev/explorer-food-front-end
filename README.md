@@ -2,8 +2,6 @@
   <h1 align="center"><a href="">🍴 Food V2 Explorer 🍴</a></h1>
 </p>
 
-![Imagem ilustrativa de pratos deliciosos](https://github.com/seudomínio/FoodExplorer-FrontEnd/assets/65794544/d1edf45e-230c-469f-bf2d-b0e43b7bb895)
-
 ## 📝 Sobre
 
 O Food Explorer é uma plataforma digital abrangente voltada para restaurantes, que oferece aos usuários uma experiência completa de pedido e acompanhamento de suas refeições. Com funcionalidades de cadastro de usuário, realização de pedidos e monitoramento de status, os clientes podem de maneira simples e eficiente realizar suas escolhas e acompanhar todo o processo. Personalização de perfis, filtragem de favoritos e sistema de busca contribuem para uma experiência mais conveniente e personalizada.
